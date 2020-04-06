@@ -1,0 +1,29 @@
+{
+    "name": "radoan/memail",
+    "description": "This package will automate mailing process for laravel application.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Radoan Hossan",
+            "email": "radoanhossaiinpream@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Radoan\\Memail\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Radoan\\Memail\\MemailServiceProvider"
+            ],
+            "aliases": {
+                "Memail": "Radoan\\Memail\\Facade"
+            }
+        }
+    }
+}
